@@ -8,7 +8,7 @@ import apiRequest from "./apiRequest";
 
 
 function App() {
-  const API_URL = "http://localhost:3000/items"
+  const API_URL = "http://localhost:3500/items"
   const [items, setItems] = useState([])
 
   const [search, setSearch] = useState('')
@@ -68,17 +68,18 @@ function App() {
 
   }
 
-  const  handledelete=async(id)=> {
+  const handledelete = async (id) => {
     const list = items.filter((item) => item.id !== id)
     setItems(list)
 
-    const deleteOption={
-      method:'DELETE'}
+    const deleteOption = {
+      method: 'DELETE'
+    }
 
     const reqUrl = `${API_URL}/${id}`
     const result = await apiRequest(reqUrl, deleteOption)
     if (result) setFetchError(result)
-    
+
   }
 
   function handleSubmit(e) {
