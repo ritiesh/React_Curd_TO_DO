@@ -31,4 +31,4 @@
   </li>
 </ul>
 
-<h2>Live Link</h2> <span>:</span><a href="[https://todocurd1.netlify.app/](https://todocurd1.netlify.app/)">click here</a>
+<h2>Live Link</h2> <span>:</span>[https://todocurd1.netlify.app/](https://todocurd1.netlify.app/)
